@@ -9,5 +9,5 @@ async def wait_random(max_delay: int = 10) -> float:
     generates and returns a random floating point value
      between zero and that value"""
     delay_value = random.uniform(0, max_delay)
-    asyncio.sleep(delay_value)
+    await asyncio.sleep(delay_value)
     return delay_value
